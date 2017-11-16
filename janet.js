@@ -1,8 +1,10 @@
+var age;
 $("startb").click(
     function (){
-    var age = $("input").innerHTML;
+        age = $("input").innerHTML;
     var result = 1/age;
 
 
     });
 
+var age=
