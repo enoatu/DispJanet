@@ -7,4 +7,3 @@ $("startb").click(
 
     });
 
-var age=
