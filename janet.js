@@ -1,8 +1,15 @@
+var a=document.getElementById("wrap").style.backgroundColor;
+
+setInterval(function () {
+    a="red";
+});
+
 var countT=0;
 document.getElementById("startb").
     addEventListener("click",check,false);
 function check() {
     if(countT!==0){return ;}
+    countT=1;
    var age = parseInt(document.getElementById("input").value);
 
     if(isNaN(age)||typeof(age)!=="number"||age<0||age>200||age===null) {
@@ -12,31 +19,29 @@ function check() {
         time();
     }
 }
+var sI;
 function time() {
- var sI= setInterval(count_color,200);
- 
-  if(count===10)clearInterval(sI);
-  thinkAge();
-  countT=0;
+sI= setInterval(count_color,1000);
 
 }
-
+var count=0;
 function count_color() {
-    var count=0;
-    for(var i=0;i<6;i++) {
-        count++;
-        colorChange();
-    }
+    if(count===10){clearInterval(sI);
+        thinkAge();
+        countT=0;
+    }else{
+    count++;
+    colorChange();}
 }
-
+var random=3;
+var f = document.getElementById("wrap").style.backgroundColor;
 function colorChange() {
-    var color;
-    var random;
-   var f = document.getElementById("wrap").style.backgroundColor;
     var random_a=Math.floor(Math.random()*4);
+    alert(random_a);
     if(random===random_a){
         colorChange();
     }else{
+        random=random_a;
         switch(random) {
             case 0:
                 f = "red";
