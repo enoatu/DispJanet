@@ -3,16 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Dispjanet</title>
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-<input type="text" id="input" alt="input" autofocus placeholder="あなたの年齢を入力してください">
-<button id ="startb" >余命計測開始</button>
-</div>
+<div id="wrap" align="center">
 
-<div class="wrap" id="wrap2">
+    <h1 align="center">でぃすぷ・じゃねっと！</h1>
+
+<div id="t_nenrei" >年齢を入力してくださいっ！<br>(👊`・ω・)👊</div>
+    <input type="text" id="input" alt="input"
+           autofocus placeholder="">
+    <article id="wrap2d">
+    <button id ="startb">余命計測開始</button>
+    </article>
+
+</div>
+<div id="resultbox" class="result">
+    結果発表！
+    あなたが体感できる時間は１歳の時と比べて<br>
+    <span id="resultdisp" class="result"></span>です。
+    <div id="box" class="result bigbox">
+        <div id="box1" class="boxflex">
+            あなたの体感できる時間
+            <div class="content result" id="c1"></div>
+        </div>
+
+        <div id="box2" class="boxflex">
+            １歳のとき体感した時間
+            <div class="content result" id="c2"></div>
+        </div>
+    </div>
+
+    <div id="boxi" class="result bigbox">
+        <div id="boxicontet" class="boxflex">
+            あなたの残り体感できる時間及び寿命
+            <div class="result" id="c3"></div>
+        </div>
+
+
+    </div>
 
 </div>
 
