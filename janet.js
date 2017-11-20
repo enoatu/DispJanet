@@ -26,7 +26,7 @@ sI= setInterval(count_color,1000);
 }
 var count=0;
 function count_color() {
-    if(count===10){clearInterval(sI);
+    if(count>10){clearInterval(sI);
         thinkAge();
         countT=0;
     }else{
