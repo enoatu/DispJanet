@@ -71,14 +71,16 @@ function thinkAge(){
 
     var c1=(String)(age/(age+1) * 500 + "px");
     var s = (String)(1/(age+1) * 500 + "px");
-    var all;
-    for(var i=0;i<(85-age);i++){
-        
+    var all=0;
+    var ag=age;
+    for(var i=1;i<(85-age);i++){
+        all+=1/ag;
+        ag++;
     }
 
         document.getElementById("c1").style.height = c1;
         document.getElementById("c2").style.height = s;
-        document.getElementById("c3").innerHTML = ;
+        document.getElementById("c3").innerHTML = all+"年";
 
 
 }
