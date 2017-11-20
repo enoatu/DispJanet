@@ -1,11 +1,17 @@
+body{
+    background-image:
+            url("スクリーンショット 2017-11-20 11.17.04.png");
+}
+
 #wrap{
-    border-radius: 100%;padding:10%;
+    border-radius: 100%;padding:3%;
     background-color:#fed7af;
-    margin:20% auto;height: 100%;
+    width:500px;height: 500px;
+    margin:0 auto;
 }
 
 h1{
-    margin:20%;
+    margin:5%;
     font-family: "ヒラギノ丸ゴ Pro W4", fantasy;}
 
 .result{
@@ -15,15 +21,16 @@ h1{
 #input{
     font-size: 2em;
     width:50%;
+    margin:3%;
 
 }
 
 #wrap2d{
-    margin:20% auto;height: 100%;
+
 }
 
 #startb{
-    height:143%;font-size: 2em;
+   font-size: 2em;
     background-color:#fe8a21;
     border-radius: 100%;
     font-family:
@@ -32,6 +39,8 @@ h1{
             sans-serif;
     color:#fff;
     padding:10%;
+    width:300px;
+    height:150px;
 
 }
 
@@ -47,14 +56,20 @@ h1{
 
 }
 #resultbox{
-    background-color: #fff;
-    width:100%;
-    height:100%;
+    margin:0 auto;
+    background-color: #fff6ea;
+    width:500px;
+    height:700px;
+
+}
+#bigbigbox{
+   display:  flex;
 }
 .bigbox{
     margin:5%;
 }
 #box{
+    flex: 1;
   display:flex;
 }
 .boxflex{
@@ -62,16 +77,18 @@ h1{
 }
 .content{
     width:40%;
-    margin:5%;
-
+    /*padding:3%;*/
+    border-top: solid #000;
+    border-bottom: solid #4f6aa7 ;
 }
 #c1{
-    background-color: rgba(195, 234, 242, 0.8);
-    ;
+    background-color: #ffc1c0;
+
 
 }
 #c2{
-    background-color: #ffc1c0;
+    background-color: rgba(195, 234, 242, 0.8);
+
     animation-name: anime1;
     animation-duration: 5s;
     /*animation-timing-function: ease;*/
@@ -82,4 +99,7 @@ h1{
 @keyframes anime1 {
     0% {width: 50px; height: 50px; background-color: aqua;}
     100% {width: 50px; height: 200px; background-color: blue;}
+}
+#boxi{
+    flex:1;
 }
