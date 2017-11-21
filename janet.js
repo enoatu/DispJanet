@@ -10,6 +10,9 @@ function check() {
     if(isNaN(age)||typeof(age)!=="number"||age<0||age>200||age===null) {
         age = null;
         alert("入力値が不正です。。。"+age);
+        countT=0;
+        count=0;
+        document.getElementById("t_nenrei").innerHTML="年齢を入力してくださいっ！<br>(👊`・ω・)👊";
     }else{
         time();
     }
@@ -80,7 +83,11 @@ function thinkAge(){
 
         document.getElementById("c1").style.height = c1;
         document.getElementById("c2").style.height = s;
-        document.getElementById("c3").innerHTML = all+"年";
+        document.getElementById("c3").innerHTML = Math.round(all*100)/100+"年";
 
 
+}
+
+function changeCss(newCssFileName) {
+    document.getElementById('style1').href = newCssFileName;
 }

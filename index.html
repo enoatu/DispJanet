@@ -2,26 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dispjanet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@enoatu" />
+    <meta property="og:url" content="http://enoatu.com/DispJanet" />
+    <meta property="og:title" content="でぃすぷ・じゃねっと！" />
+    <meta property="og:description" content="大人になると時間が早く感じるというジャネーの法則を基に、時間の流れの速さを感じてもらおうというJSアプリです
+" />
+    <meta property="og:image" content="http://enoatu.com/DispJanet/スクリーンショット 2017-11-20 11.17.04.png" />
+    <title>でぃすぷ・じゃねっと！</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" href="スクリーンショット%202017-11-20%2011.17.04.png">
+    <link rel="icon" href="スクリーンショット%202017-11-20%2011.17.04.png">
+
 </head>
 <body>
 <div id="wrap" align="center">
 
     <h1 align="center">でぃすぷ・じゃねっと！</h1>
+    <div id="explan">でぃすぷ・じゃねっと！とは、大人になると時間が早く感じるという<a href="https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%8D%E3%83%BC%E3%81%AE%E6%B3%95%E5%89%87"
+    >ジャネーの法則</a>を基に、時間の流れの速さを感じてもらおうというJSアプリです</div>
 
 <div id="t_nenrei" >年齢を入力してくださいっ！<br>(👊`・ω・)👊</div>
     <input type="text" id="input" alt="input"
            autofocus placeholder="">
     <article id="wrap2d">
-    <button id ="startb">余命計測開始</button>
+    <button id ="startb">計測開始</button>
     </article>
-
 </div>
+
 <div id="resultbox" align="center" class="result">
-    結果発表！
+    <div id="result_top">結果発表！
     あなたが体感できる時間は１歳の時と比べて<br>
-    <span id="resultdisp" class="result"></span>%です。
+        <span id="resultdisp" class="result"></span>%です。</div>
     <div id="bigbigbox">
         <div id="box" class="result bigbox">
             <div id="box1" class="boxflex">
@@ -37,7 +50,7 @@
 
         <div id="boxi" class="result bigbox">
             <div id="boxicontet" class="boxflex">
-                あなたの残り体感できる時間及び寿命
+                あなたの残り体感できる時間つまり余命は
                 <div class="result" id="c3"></div>
             </div>
         </div>
